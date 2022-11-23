@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        td {
+            border: 1px solid black;
+            padding: 4px;
+            margin: 0;
+        }
+
+        #email, #name, #contact, #add-on {
+            display: block;
+            padding: 4px;
+        }
+
+        .socials {
+            display: grid;
+            max-width: 20rem;
+            grid-template-columns: 1fr 1fr;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>About me</h1>
+    </header>
+
+    <section>
+        <p>Hello! My name is Gabriel, previously a student from Institute Sinaran I wanted to find something that could enjoy making a living out of 
+            and decided to give IT a try. So far no doubts has arised from my decision just yet, in fact I believed I even narrowed down what I wish to do
+            in the future in the gaming industry. I hope to go far and have faith that sigma school will help me do just that.
+        </p>
+        <p>My interests are:</p>
+
+        <table>
+            <tr>
+                <th>Interests</th>
+                <th>Specifics</th>
+            </tr>
+            <tr>
+                <td>Gaming</td>
+                <td>Competitive games, Co-op games, Fighting games</td>
+            </tr>
+            <tr>
+                <td>Coding</td>
+                <td>Javascript, Tailwind.css, Css</td>
+            </tr>
+        </table>
+
+        <h4>If you want to reach out to me, fill out the form below and I'll try to get back to you as soon as I am able!</h4>
+        <form>
+            <label id="name">Name: </label>
+            <input type="text">
+
+            <label id="email">Email: </label>
+            <input type="email">
+
+            <label id="contact">Contact Info: </label>
+            <input type="text">
+
+            <label id="add-on">Anything else you'd like to let me know?</label>
+            <textarea class="textarea" cols="36rem" rows="8"></textarea>
+        </form>
+    </section>
+    
+    <footer>
+        <p>If you want to reach out to me in other ways, or are just looking for a friend, here are my socials.</p>
+        <ul class="socials">
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Insta</a></li>
+            <li><a href="#">Github</a></li>
+            <li><a href="#">Discord</a></li>
+        </ul>
+    </footer>
+    
+</body>
+</html>
