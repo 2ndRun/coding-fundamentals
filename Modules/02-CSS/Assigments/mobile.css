@@ -1,0 +1,59 @@
+body {
+    background-color: red;
+  }
+
+.mobile {
+    display: none;
+}
+
+  .tablet {
+    display: none;
+
+}
+.desktop {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .mobile {
+        display: block;
+    }
+    body {
+        background-color: red;
+        color: black;
+    }
+
+    
+}
+
+@media (min-width:640px) {
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: block;
+    }
+    body {
+        background-color: lightgreen;
+        color: black;
+    }
+}
+
+@media (min-width: 1024px) {
+    .mobile {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+    body {
+        background-color: blue;
+        color: white;
+    }
+}
