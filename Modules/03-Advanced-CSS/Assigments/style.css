@@ -3,54 +3,136 @@ html {
 }
 
 body {
-    background-color: black;
-    color: white;
+    padding: 0;
+    margin: 0;
+    background-color: lightblue;
 }
 
-.rating {
+.not__necessary {
+    background-color: lightblue;
+    height: 60rem;
+    margin-bottom: 0;
+}
+
+.overall__footer {
+    background-color: white;
+    height: 16rem;
+    margin-top: -10;
+}
+
+.footer__content {
+    list-style-type: none;
     display: flex;
-    flex-direction: row-reverse;
-
-}
-
-.checked {
-    color: orange;
+    height: 6rem;
+    justify-content: center;
+    align-items: center;
     
+    /*Change to div if list doesn't work*/
 }
 
-.review {
-    padding: 2rem;
-    border: 1.5px solid white;
-    border-radius: 8px;
+.content__list {
+    display: flex;
+    height: 40px;
     max-width: 40rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    justify-content: space-around; 
+    align-items: center;
+    flex: 1 1;
+    flex-wrap: wrap;
+}
+.info {
+    padding: 10px;
+    height: 25px;
+}    
+
+a {
+    text-decoration: none;
+    color: gray;
 }
 
-.customer__info {
+.social__medias {
     display: flex;
-    padding: 0;
-    height: 55px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 50px;
 }
 
-.pfp {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 60px;
+.facebook {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    fill: gray;
+}
+
+.facebook__logo {
+    color: gray;
+}
+
+.insta {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    fill: gray;
+    color: gray;
+}
+
+.twitter {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    fill: gray;
+}
+
+.github {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: gray;
+}
+
+.website {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: gray;
+    fill: gray;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: rem;
+    color: gray;
+    height: 5rem;
+}
+
+@media (max-width: 600px) {
+    .overall__footer {
+        height: 18rem;
+    }
+
+    .footer__content {
+        height: 5rem;
+        
+        
+    }
+
+    .social__medias {
+        position: relative;
+        top: 2rem;
+    }
     
-}
+    .copyright {
+        align-items: flex-end;
+        
+    }
 
-.name {
-    font-size: larger;
-    margin-left: 10px;
-    margin-top: 14px;
-}
-
-.right__side {
-    position: relative;
-    height: 65px;
-    padding: 0;
-    
-}
-
-.text {
-    font-style: italic;
 }
