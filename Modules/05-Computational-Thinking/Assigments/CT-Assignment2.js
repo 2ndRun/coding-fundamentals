@@ -13,13 +13,15 @@
 
 
 function perimeter(l, num) {
-    let letter = (l == "s") ? num * 4 : num * 6.28;
+    let letter = (l == "s") ? num * 4
+    : (l == "c") ? num * 6.28 
+    : null
 //    let s = number * 4
 //    let c = 6.28 * number
 
   return letter
 //return (s) * (number * 4) + (c) * (number * 6.28);
-letter = ( c ) ? (3.28 * number) : (number * 4)
+//letter = ( c ) ? (3.28 * number) : (number * 4)
 
 }
 
