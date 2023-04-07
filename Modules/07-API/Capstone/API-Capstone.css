@@ -1,0 +1,109 @@
+/*in a card 
+//border-radius little, tall thin cards that are justified centered
+//at big screen-width it should show 3 cards per row, and medium is 2, small is 1, max is 3
+//use flexbox flexwrap max width*/
+
+* {
+    font-family: sans-serif;
+    margin: none;
+    padding: none;
+
+}
+
+#title {
+    padding: 15px;
+    background-color: black;
+    background-image: linear-gradient(to right, black , gray);
+    color: white;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /*auto auto auto means to set 3 columns whose size will depend on the screen size
+      auto auto on the other hand will return 2 columns*/
+    justify-content: center;
+    flex-direction: row;
+    grid-row: auto;
+
+}
+
+#card__demo {
+    position: relative;
+    display: flex;
+    padding: 0;
+    margin: 20px;
+    border: 2px solid rgba(211, 211, 211, 0.695);
+    border-radius: 5px;
+    max-width: 25rem;
+    min-height: 41rem;
+    max-height: 41rem;
+    height: 100%;
+    width: 22rem;
+    flex-wrap: wrap;
+
+}
+
+#img__link {
+    height: 19rem;
+    width: 352px;
+    border-radius: 5px 5px 0px 0px;
+
+}
+
+#name {
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+
+#description {
+    height: 14.5rem;
+    max-width: 20rem;
+    width: 23rem;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+#profile {
+    position: absolute;
+    bottom: 0;
+    height: 2.5rem;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px 5px 4px 4px;
+    background-color: black;
+    color: white;
+}
+
+#profile:active{
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 320px) {
+    #cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-row: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    #cards {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (min-width: 769px) {
+    #cards {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
