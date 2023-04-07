@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    border: 0;
+    font-family: sans-serif;
+    font-style: bold;
+}
+
+.quote-card {
+    width: 59ch;
+    height: 22ch;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: grey;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.quotes-container {
+    height: 17ch;
+    width: 59ch;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.quotes {
+    font-size: medium;
+    height: 12ch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.author {
+    height: 5ch;
+    width: 50ch;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: gray;
+    display: flex;
+    justify-content:flex-end;   
+}
+
+.quote-button {
+    padding: 5px;
+    display: flex;
+    margin-top: 7px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid black
+}
+
+.quote-button:active {
+    background-color: gray;
+    color: white;
+}
